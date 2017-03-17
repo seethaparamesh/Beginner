@@ -1,3 +1,4 @@
+import javax.swing.text.html.HTMLDocument.HTMLReader.PreAction;
 
 public class bubbleSort {
 
@@ -24,11 +25,17 @@ public class bubbleSort {
 			count++;
 		} while (count < toBeSortedBubble.length);
 
-		bubbleSortPosition = 0;
+		PrintArray(toBeSortedBubble);
+		
+	}
+	
+	
+	public static void PrintArray(int[] toBeSortedBubble) {
+		int bubbleSortPosition = 0;
 		while (bubbleSortPosition < toBeSortedBubble.length) {
 			System.out.print(toBeSortedBubble[bubbleSortPosition++] + " ");
 		}
+		
 	}
-	
 	
 }
