@@ -18,9 +18,7 @@ public class bubbleSort {
 					int temp = toBeSortedBubble[bubbleSortPosition + 1];
 					toBeSortedBubble[bubbleSortPosition + 1] = toBeSortedBubble[bubbleSortPosition];
 					toBeSortedBubble[bubbleSortPosition] = temp;
-				} else {
-
-				}
+				} 
 			}
 			count++;
 		} while (count < toBeSortedBubble.length);
