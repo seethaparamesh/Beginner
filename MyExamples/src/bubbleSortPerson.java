@@ -1,12 +1,16 @@
-public class bubbleSort {
+import dao.Person;
+
+public class bubbleSortPerson {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		bubbleSortMethod();
+		Person p1 = new Person("San", 30);
+		Person p2 = new Person("Arun",  37);
+		System.out.println(p1);
+		
+		if (p1.compareTo(p2) > 0) System.out.println(p2 + " older than " + p1);
 
 	}
-	//just trying out working on a repository
-
+	/*
 	public static void bubbleSortMethod() {
 		int count = 0;
 		int bubbleSortPosition = 0;
@@ -21,18 +25,10 @@ public class bubbleSort {
 			}
 			count++;
 		} while (count < toBeSortedBubble.length);
+		
+	}
+	
+	*/
 
-		PrintArray(toBeSortedBubble);
-		
-	}
-	
-	
-	public static void PrintArray(int[] toBeSortedBubble) {
-		int bubbleSortPosition = 0;
-		while (bubbleSortPosition < toBeSortedBubble.length) {
-			System.out.print(toBeSortedBubble[bubbleSortPosition++] + " ");
-		}
-		
-	}
 	
 }
